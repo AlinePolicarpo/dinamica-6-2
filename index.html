@@ -14,41 +14,37 @@
 <body>
   <!-- Seu código aqui -->
   <header class="header-trybe">
-    <h1>Hotel Trybe</h1>
+    <h1>Trybe Hotel</h1>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s" alt="">
   </header>
-
-  <section class="hotel-form">
-      <label for="checkin">Check-in</label>
-      <input type="date" class="inputCheckin form-control">
-      <label for="checkin">Check-out</label>
-      <input type="date" class="inputCheckout form-control">
+<form action="">
+  <section hotel-form>
+    <label class="inputCheckin" for="in-checkin">Check-in<input id="in-checkin" type="date"></label>
+    <label class="inputCheckout" for="in-checkout">Check-out<input id="in-checkout" type="date"></label>
   </section>
 
-  <section class="hotel-form">
-    <p class="lead">Acomodação</p>
-    <input type="radio" name="quarto" value="comum" class="bedroom" id="bedroom">
-    <label for="bedroom">Comum</label>
-    <input type="radio" name="quarto" value="club" class="bedroom" id="bedroom">
-    <label for="bedroom">Club</label>
-    <input type="radio" name="quarto" value="luxo" class="bedroom" id="bedroom">
-    <label for="bedroom">Luxo</label>
-  </section>
+<section class="hotel-form">
+  <p>Acomodação: </p>
+  <label for="comum"><input id="comum" name="acomodacao" type="radio">Comum</label>
+  <label for="club"><input id="club" name="acomodacao" type="radio">Club</label>
+  <label for="luxo"><input id="luxo" name="acomodacao" type="radio">Luxo</label>
+</section>
 
-  <section class="hotel-form">
-    <label for="people">Número de Hóspedes</label>
-    <select name="people" id="people" class="nPessoas form-select">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-  </section>
+<section class="hotel-form">
+  <label>Número de hóspedes</label>
+  <select class="nPessoas" name="nHospedes">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+</section>
 
-  <section class="hotel-form">
-    <textarea name="obs" placeholder="Observações" class="obs form-control"></textarea>
-  </section>
-  <button class="btn btn-success">Reservar</button>
+<section class="hotel-form">
+<textarea class="obs" name="observacao" id="" cols="10" rows="3" placeholder="Digite aqui sua observação"></textarea>
+</section>
+<!-- <button class="button" type="submit" width="20px" height="10px"></button> -->
+</form>
 </body>
 
 </html>
